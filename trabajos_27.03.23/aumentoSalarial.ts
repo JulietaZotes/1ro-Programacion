@@ -14,16 +14,16 @@ let aumento: number = 0
 
 if(sueldoActual <= 15000) {
     aumento = sueldoActual * 0.2
-    console.log("Su aumento sera de: $", aumento)
+    console.log("Su aumento sera de: $", aumento);
 }
 else if(sueldoActual <= 20000) {
     aumento = sueldoActual * 0.1
-    console.log("Su aumento sera de: $", aumento)
+    console.log("Su aumento sera de: $", aumento);
 }
 else if(sueldoActual <= 25000) {
     aumento = sueldoActual * 0.5
-    console.log("Su aumento sera de: $", aumento)
+    console.log("Su aumento sera de: $", aumento);
 }
 else {
-    console.log("No recibira aumento de suelto")
+    console.log("No recibira aumento de suelto");
 }
