@@ -8,8 +8,7 @@ let mes: string = "octubre"
 
 if(ingresoMes == mes) {
     console.log("¡Felicitaciones, ud recibira un 15% de descuento en su compra!")
-}
-else {
+} else {
     console.log("Gracias por su compra")
 }
 

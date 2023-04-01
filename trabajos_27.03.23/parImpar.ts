@@ -6,12 +6,10 @@ import * as rls from "readline-sync";
 let n: number = rls.questionInt("Ingrese un numero: ");
 
 if(n == 0) {
-    console.log("El numero ingresado es 0")
-}
-else if(n % 2 == 0) {
-    console.log("El numero", n, "es par");
+      console.log("El numero ingresado es 0")
+}else if(n % 2 == 0) {
+      console.log("El numero", n, "es par");
 
-}
-else {
-    console.log("El numero", n, "es impar")
+    }else {
+      console.log("El numero", n, "es impar")
 }
