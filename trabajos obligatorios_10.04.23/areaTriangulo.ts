@@ -22,4 +22,3 @@ while(base <= 7 && altura <= 14){
     base = rls.questionInt("ingrese base: ");
     altura = rls.questionInt("ingrese la altura");
    }*/
-   

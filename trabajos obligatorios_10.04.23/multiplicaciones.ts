@@ -12,3 +12,4 @@ for(let i: number = 1; i <= multiplicador; i++) {
     let resultado = multiplicando * i;
     console.log(`${multiplicando} x ${i} = ${resultado}`);
 }
+
