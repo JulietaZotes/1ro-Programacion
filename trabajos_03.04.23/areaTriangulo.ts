@@ -9,17 +9,9 @@ function calcularAreaTriangulo (base: number, altura: number){
     return area;
 } 
 
-/*console.log(calcularAreaTriangulo(2,4))
-
-let areaPar1 = (calcularAreaTriangulo(1,2))
-
-console.log(areaPar1)*/
-
-/*let base = 0
-let altura = 0
-
-while(base <= 7 && altura <= 14){
-    base = rls.questionInt("ingrese base: ");
-    altura = rls.questionInt("ingrese la altura");
-   }*/
-   
+for (let n:number = 1; n<=7; n ++){
+    let base = n;
+    let altura = n * 2;
+    let resultado = calcularAreaTriangulo(base,altura);
+    console.log(`El area de un triangulo cuya base es ${base} y altura ${altura} es: ${resultado}`);
+}
