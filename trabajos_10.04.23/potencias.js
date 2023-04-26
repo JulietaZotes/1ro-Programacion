@@ -4,8 +4,8 @@ var rls = require("readline-sync");
 var exponente = 1;
 var base = 1;
 var resultado = 0;
-function calcularPotencia(exponente, base) {
-    resultado = Math.pow(exponente, base);
+function calcularPotencia(base, exponente) {
+    resultado = Math.pow(base, exponente);
     return resultado;
 }
 if (exponente >= 0) {
@@ -19,6 +19,6 @@ if (exponente >= 0) {
         console.log("El exponente ingresado debe ser mayor o igual a 0");
     }
     else {
-        console.log("El resultado es: ".concat(calcularPotencia(exponente, base)));
+        console.log("El resultado es: ".concat(calcularPotencia(base, exponente)));
     }
 }
