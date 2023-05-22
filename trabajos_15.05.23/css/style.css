@@ -1,0 +1,34 @@
+body{
+    background-image: url("../img/textura-inconsútil-cocina-42158716.jpg");
+    background-size: cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1{
+    font-size: 23px;
+    color: rgb(237, 213, 182);
+    padding-top: 30px;
+    padding-bottom : 30px;
+    padding-left: 10px;
+    background-image: url("../img/pollo.jpg");
+}
+
+h2{
+    color: rgb(237, 162, 64);
+    font-size: 20px;
+    text-align: center;
+}
+
+.listas {
+    color: rgb(108, 58, 1);
+}
+
+#footer {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom : 30px;
+    
+
+}
+
+
