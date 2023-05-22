@@ -1,0 +1,37 @@
+body {
+    background-color: #cefff8;
+}
+
+.contenedor {
+    width: 80px;
+    margin: auto;
+}
+
+header {
+    margin-top: 50px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+img {
+    width: 500px;
+}
+
+figure {
+    margin-top: 50px;
+    margin-bottom: 50px ;
+    float:left /*float es para que el elemento ocupe solo su ancho, y no el de la pagina completa*/
+}
+
+article {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.titulos-secciones { 
+    font-style: italic;
+    font-size: 18px;
+    border-bottom: 1px solid #232323;
+    padding-bottom: 7px ;
+}
+
