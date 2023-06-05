@@ -91,3 +91,14 @@ footer{
     margin: auto;
     margin-top: 20px;
 }
+
+#boton:hover {
+    padding: 4px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    color: rgb(69, 4, 4);
+}
+
+#boton:active {
+    color: rgb(152, 129, 26);
+}
