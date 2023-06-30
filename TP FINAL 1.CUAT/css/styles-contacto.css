@@ -14,6 +14,7 @@ form {
 .box-form {
     width: 100%;
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 /* estilos inputs nombre, email y objetos */
@@ -53,4 +54,11 @@ form {
 #btn-enviar {
     margin-left: 150px;
     margin-right: 10px;
+}
+
+/* mensaje confirmación envío form */
+#msj-form {
+    color: rgb(201, 172, 130);
+    font-family:'Dosis', sans-serif;
+    font-size: 85%;
 }
