@@ -1,18 +1,25 @@
+// obtener elemento boton añadir
 const btnAddTask = document.getElementById("add-task");
 
+// escuchar el evento 'click' del boton añadir
 btnAddTask.addEventListener("click", addTask);
 
+// obtener elemento ul y escuchar evento 'change' en dropdown menu
 document.getElementById("list").addEventListener("change", changeAction);
 
+// inicializar con valor 1 la variable que se usa para generar IDs
 var taskID = 1;
+
+// array para almacenar tareas
+let tasks = [];
 
 // funcion agregar tarea 
 
-function addTask() {
+function addTask(event) {
     var taskInput = document.getElementById("task");
-    var taskText = taskInput.value.trim();
+    var taskText = taskInput.value.trim(); // método que elimina los espacios en blanco en ambos extremos del string
 
-    if(taskText === "") {
+    if(taskText === "") {  // validacion de texto no vacio
         alert("Ingrese un objeto válido");
         return;
     }
@@ -25,10 +32,19 @@ function addTask() {
                           <select class="mantener">  
                           <option value="mantener">Mantener</option>
                           <option value="renovar">Renovar</option>
-                          <option value="eliminar">Eliminar</option>
+                          <option value="eliminar" id="eliminar">Eliminar</option>
                           </select>`;
     document.getElementById("list").appendChild(listItem);
-    taskInput.value = "";
+    
+    const newTask = { //creacion objeto para almacenar en arreglo 'tasks'
+    id: taskID,
+    description: taskText,
+    }
+
+    tasks.push(newTask); // add objeto al arreglo
+    console.log(tasks);
+    
+    taskInput.value = ""; // limpia el texto del input
     taskID++;
 }
 
@@ -36,13 +52,13 @@ function addTask() {
 
 function changeAction (event) {
     var taskItem = event.target;
-    console.log(`Task item: ${taskItem}`);
+    // console.log(`Task item: ${taskItem}`);
 
     // var taskID = taskItem.getAttribute(id);
     // console.log(`task id: ${taskID}`);
     
     var taskAction = event.target.value;
-    console.log(`Task action: ${taskAction}`);
+    // console.log(`Task action: ${taskAction}`);
 
     taskItem.classList.remove("mantener", "renovar", "eliminar");
     taskItem.classList.add(taskAction);
