@@ -1,9 +1,13 @@
-// capturar elementos del form
+// capturar elementos del form y del documento
 const form = document.querySelector("form"); // selecciona el primer elemento con ese nombre en el documento
 document.getElementById("btn-reset").addEventListener("click", borrarMensaje);
 var mensajeForm = document.getElementById("msj-form");
+
 // escucha el evento submit dentro del formulario en vez de al boton enviar
 form.addEventListener("submit", handleEnviar); 
+
+
+
 
 function handleEnviar(e) {
     e.preventDefault(); //para evitar que recargue la pagina y se borren los datos

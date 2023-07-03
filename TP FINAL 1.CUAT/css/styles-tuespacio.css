@@ -43,7 +43,7 @@ hr {
     padding: 10px;
     /* border: 2px solid fuchsia;
     background-color: aquamarine; */
-    display: flex;
+    text-align: right;
 }
 
 /* clases para las diferentes acciones */
@@ -62,7 +62,7 @@ hr {
 /* estilo para el texto ingresado */
 .task-text {
     font-family: 'Dosis', sans-serif;
-    margin-right: 20px;
+    margin-right: 20px;  
 }
 
 
